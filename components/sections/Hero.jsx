@@ -135,9 +135,10 @@ export default function Hero() {
           >
             <img
               src={card.img}
-              alt="Featured artwork"
+              alt="Nexile Work"
               className="h-full w-full object-cover"
               draggable={false}
+              fetchPriority="high" // <-- TAMBAHKAN INI
             />
           </motion.div>
         ))}
