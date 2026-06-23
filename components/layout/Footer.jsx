@@ -55,9 +55,9 @@ export default function Footer() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h4 className="text-sm font-semibold tracking-tight text-gray-900">
+            <h3 className="text-sm font-semibold tracking-tight text-gray-900">
               Layanan Utama
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-3">
               <li>
                 <button onClick={() => document.getElementById("layanan")?.scrollIntoView({ behavior: "smooth" })} className="text-sm text-gray-500 transition-colors hover:text-gray-900">
@@ -84,18 +84,18 @@ export default function Footer() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h4 className="text-sm font-semibold tracking-tight text-gray-900">
+            <h3 className="text-sm font-semibold tracking-tight text-gray-900">
               Hubungi Saya
-            </h4>
+            </h3>
             <ul className="mt-4 flex flex-col gap-4">
               <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 text-gray-400 shrink-0" />
+                <Mail className="h-5 w-5 text-gray-600 shrink-0" />
                 <a href="mailto:mochsugihnugraha@gmail.com" className="text-sm text-gray-500 transition-colors hover:text-gray-900">
                   mochsugihnugraha@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-gray-400 shrink-0" />
+                <MapPin className="h-5 w-5 text-gray-600 shrink-0" />
                 <span className="text-sm text-gray-500">
                   Sumedang, Jawa Barat, Indonesia
                 </span>
@@ -107,10 +107,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-gray-100 pt-8 sm:flex-row">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-600">
             © {new Date().getFullYear()} Nexile. All rights reserved.
           </p>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-600">
             Made with ❤️ in Sumedang.
           </p>
         </div>

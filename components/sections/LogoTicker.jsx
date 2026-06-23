@@ -24,7 +24,7 @@ export default function LogoTicker() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="text-center text-sm font-semibold uppercase tracking-wide text-gray-400"
+        className="text-center text-sm font-semibold uppercase tracking-wide text-gray-600"
       >
         Dipercaya oleh brand yang berinovasi.
       </motion.p>
@@ -46,7 +46,7 @@ export default function LogoTicker() {
           {loopLogos.map((name, idx) => (
             <span
               key={idx}
-              className="select-none whitespace-nowrap text-2xl font-bold tracking-tight text-gray-300 transition-colors hover:text-gray-500"
+              className="select-none whitespace-nowrap text-2xl font-bold tracking-tight text-gray-600 transition-colors hover:text-gray-500"
             >
               {name}
             </span>

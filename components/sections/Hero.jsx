@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+
 
 const fanCards = [
   {
@@ -133,12 +135,15 @@ export default function Hero() {
             whileHover={{ y: card.y - 16, scale: 1.04, transition: { duration: 0.3 } }}
             className="absolute h-[300px] w-[200px] overflow-hidden rounded-3xl border-4 border-white shadow-xl sm:h-[360px] sm:w-[240px] lg:h-[420px] lg:w-[280px]"
           >
-            <img
+            {/* INI YANG DIGANTI */}
+            <Image
               src={card.img}
               alt="Nexile Work"
-              className="h-full w-full object-cover"
+              fill
+              sizes="(max-width: 768px) 200px, 280px"
+              className="object-cover"
               draggable={false}
-              fetchPriority="high" // <-- TAMBAHKAN INI
+              priority={card.id === 3} 
             />
           </motion.div>
         ))}
