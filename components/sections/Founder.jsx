@@ -85,14 +85,13 @@ export default function Founder() {
             className="flex-1 w-full max-w-md lg:max-w-none"
           >
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border-4 border-white shadow-xl">
-              {/* Ganti src ini dengan link foto profesional terbaik Anda */}
-              <img
-                src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&q=80"
-                alt="Moch Sugih Nugraha - Tech-Creative & Web Developer"
-                className="h-full w-full object-cover grayscale transition-transform duration-500 hover:scale-105 hover:grayscale-0"
-                draggable={false}
-              />
-            </div>
+  <img
+    src="/images/sugih.webp"
+    alt="Moch Sugih Nugraha - Tech-Creative & Web Developer"
+    className="h-full w-full object-cover grayscale transition-transform duration-500 hover:scale-105 hover:grayscale-0"
+    draggable={false}
+  />
+</div>
           </motion.div>
 
         </div>

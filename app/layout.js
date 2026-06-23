@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/config";
+import AuthProvider from "@/components/AuthProvider"; // IMPORT BARU DARI CLAUDE
 
 // next/font self-hosts and inlines font-display: swap automatically —
 // this avoids CLS (Cumulative Layout Shift) from late-loading web fonts.
@@ -71,19 +72,21 @@ export default function RootLayout({ children }) {
     <html lang="id" className={`${inter.variable} ${lexend.variable} ${jetbrainsMono.variable}`}>
       {/* DIUBAH: bg-base text-zinc-200 diganti jadi bg-[#FAFAFA] text-zinc-900 */}
       <body className="font-sans bg-[#FAFAFA] text-zinc-900 antialiased">
-        {/* Skip-to-content link — accessibility for keyboard/screen reader users */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-md focus:bg-electric focus:px-4 focus:py-2 focus:text-white"
-        >
-          Lompat ke konten utama
-        </a>
+        <AuthProvider> {/* WRAPPER BARU DARI CLAUDE */}
+          {/* Skip-to-content link — accessibility for keyboard/screen reader users */}
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:rounded-md focus:bg-electric focus:px-4 focus:py-2 focus:text-white"
+          >
+            Lompat ke konten utama
+          </a>
 
-        <Navbar />
+          <Navbar />
 
-        <main id="main-content">{children}</main>
+          <main id="main-content">{children}</main>
 
-        <Footer />
+          <Footer />
+        </AuthProvider> {/* PENUTUP WRAPPER */}
       </body>
     </html>
   );

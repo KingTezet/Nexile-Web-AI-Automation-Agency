@@ -24,7 +24,7 @@ const masonryImages = [
 
 export default function Showcase() {
   return (
-    <section className="bg-[#FAFAFA] px-6 py-20 lg:px-10 lg:py-28">
+    <section id="portofolio" className="bg-[#FAFAFA] px-6 py-20 lg:px-10 lg:py-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
         {/* Left: Headline */}
         <motion.div

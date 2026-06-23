@@ -49,7 +49,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section className="bg-[#FAFAFA] px-6 py-20 lg:px-10 lg:py-28">
+    <section id="paket-harga" className="bg-[#FAFAFA] px-6 py-20 lg:px-10 lg:py-28">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

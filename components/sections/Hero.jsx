@@ -69,7 +69,7 @@ const cardVariant = {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#FAFAFA] px-6 pt-16 pb-32 lg:px-10 lg:pt-20">
+    <section id="beranda" className="relative overflow-hidden bg-[#FAFAFA] px-6 pt-16 pb-32 lg:px-10 lg:pt-20">
       {/* Headline */}
       <div className="mx-auto max-w-4xl text-center">
         <motion.h1
@@ -98,11 +98,17 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 flex flex-wrap items-center justify-center gap-4"
         >
-          <button className="flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-[1.03] active:scale-[0.98]">
+          <button
+            onClick={() => document.getElementById("kontak")?.scrollIntoView({ behavior: "smooth" })}
+            className="flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-transform hover:scale-[1.03] active:scale-[0.98]"
+          >
             Konsultasi Gratis
             <ArrowRight className="h-4 w-4" />
           </button>
-          <button className="rounded-full border border-gray-200 bg-white px-6 py-3.5 text-sm font-semibold text-gray-700 shadow-sm transition-colors hover:bg-gray-100">
+          <button
+            onClick={() => document.getElementById("portofolio")?.scrollIntoView({ behavior: "smooth" })}
+            className="rounded-full border border-gray-200 bg-white px-6 py-3.5 text-sm font-semibold text-gray-700 shadow-sm transition-colors hover:bg-gray-100"
+          >
             Lihat Portofolio
           </button>
         </motion.div>

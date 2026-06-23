@@ -44,7 +44,7 @@ export default function Marketplace() {
   };
 
   return (
-    <section className="bg-[#FAFAFA] px-6 py-20 lg:px-10 lg:py-28">
+    <section id="layanan" className="bg-[#FAFAFA] px-6 py-20 lg:px-10 lg:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <motion.div
