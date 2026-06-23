@@ -25,9 +25,8 @@ export default function Footer() {
               }}
               className="flex items-center gap-2"
             >
-              <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gray-900">
-                <span className="h-3 w-3 rounded-full bg-white" />
-              </span>
+              {/* Logo SVG Baru di Footer */}
+              <img src="/images/logo-nexile.svg" alt="Nexile Logo" className="h-8 w-auto" />
               <span className="text-lg font-semibold tracking-tight text-gray-900">
                 Nexile
               </span>
