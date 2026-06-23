@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image"; // <--- INI BARIS PENYELAMATNYA
 import { motion } from "framer-motion";
 import { Trophy, GraduationCap, Code2, Rocket } from "lucide-react";
 
