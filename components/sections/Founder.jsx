@@ -85,9 +85,11 @@ export default function Founder() {
             className="flex-1 w-full max-w-md lg:max-w-none"
           >
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border-4 border-white shadow-xl">
-  <img
+  <Image
     src="/images/sugih.webp"
     alt="Moch Sugih Nugraha - Tech-Creative & Web Developer"
+    width={400}
+    height={500}
     className="h-full w-full object-cover grayscale transition-transform duration-500 hover:scale-105 hover:grayscale-0"
     draggable={false}
   />

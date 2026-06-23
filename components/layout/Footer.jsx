@@ -36,13 +36,13 @@ export default function Footer() {
             </p>
 
             <div className="mt-6 flex items-center gap-3">
-              <a href="https://instagram.com/sugihnugrahaaa" target="_blank" rel="noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900">
+              <a href="https://instagram.com/sugihnugrahaa" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900">
                 <Instagram className="h-4 w-4" />
               </a>
-              <a href="https://linkedin.com/in/moch-sugih-nugraha" target="_blank" rel="noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900">
+              <a href="https://linkedin.com/in/moch-sugih-nugraha" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900">
                 <Linkedin className="h-4 w-4" />
               </a>
-              <a href="https://github.com/KingTezet" target="_blank" rel="noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900">
+              <a href="https://github.com/KingTezet" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-600 shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900">
                 <Github className="h-4 w-4" />
               </a>
             </div>
